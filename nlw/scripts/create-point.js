@@ -4,7 +4,7 @@
     
     fetch("https://servicodados.ibge.gov.br/api/v1/localidades/estados")
     .then(res => res.json())
-    .then(states => )
+    .then(states => ){
         for(state of states){
             ufSelect.innerHTML += `<option value="${state.id}">${state.nome}</option>`
         }
