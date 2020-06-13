@@ -1,20 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt_br">
+{% extends "layout.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro do ponto de coleta</title>
+{% set pageId = "page-create-point" %}
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,300&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="stylesheet" href="/styles/create-point.css">
-    <link rel="stylesheet" href="/styles/responsive.css">
-</head>
+{% block title %}
+    <title>Cadastre um ponto de coleta</title>
+{% endblock title %}  
 
-<body>
+{% block styles %}
+     <link rel="stylesheet" href="/styles/create-point.css">
+{% endblock styles %}
 
-    <div id="page-create-point">
+{% block content %}
 
         {%include "partials/page-header.html" %}
 
@@ -100,11 +96,8 @@
 
             <button type="submit">Cadastrar ponto de coleta</button>
         </form>
+{% endblock content %}
 
-    </div>
-
+{% block scripts %}
     <script src="/scripts/create-point.js"></script>
-
-</body>
-
-</html>
+{% endblock scripts %}
