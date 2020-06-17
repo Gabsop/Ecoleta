@@ -7,7 +7,7 @@ const db = new sqlite3.Database("./src/database/database.db")
 module.exports = db
 
  //Utilizar o objeto de banco de dados para realizar operações
-//  db.serialize(() => {
+  db.serialize(() => {
     
 // //Comandos SQL:
     
@@ -56,27 +56,27 @@ module.exports = db
 //         console.log(this)
 //     }
 
-//     db.run(query, values, afterInsertData)
+    // db.run(query, values, afterInsertData)
 
-//     // 3. Consultar os dados da tabela
-//     // db.all(`SELECT * FROM places`, function(err,rows) {
-//     //     if(err) {
-//     //         return console.log(err)
-//     //     }
+    // 3. Consultar os dados da tabela
+    // db.all(`SELECT * FROM places`, function(err,rows) {
+    //     if(err) {
+    //         return console.log(err)
+    //     }
 
-//     //     console.log("Aqui estão os seus registros:")
-//     //     console.log(rows)
-//     // })
+    //     console.log("Aqui estão os seus registros:")
+    //     console.log(rows)
+    // })
 
 
    // 4. Deletar um dado da tabela
 
-    // db.run(`DELETE FROM places WHERE id = ?`, [3], function(err, rows){
-    //     if(err){
-    //         return console.log(err)
-    //     }
+    db.run(`DELETE FROM places WHERE id = ?`, [5], function(err, rows){
+        if(err){
+            return console.log(err)
+        }
 
-    //     console.log("Registro deletado com sucesso!")
-    //     console.log(rows)
-    // })
-//  })
+        console.log("Registro deletado com sucesso!")
+        console.log(rows)
+    })
+  })
