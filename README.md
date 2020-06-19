@@ -26,7 +26,7 @@ A website that's designed to make the connection of recycling companies and peop
 ## How to use
 - Clone this repository and enter it
 ```bash
- $ git clone https://github.com/Gabsop/nlw && cd nlw
+ $ git clone https://github.com/Gabsop/Ecoleta && cd Ecoleta
  ```
 - Start the server
 ```bash
