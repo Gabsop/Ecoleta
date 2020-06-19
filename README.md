@@ -1,5 +1,8 @@
 # Ecoleta ♻️
 A website that's designed to make the connection of recycling companies and people. Built in the Next Level Week.
+<h1 aling=center>
+<img alt="Initial page" src="img/index.jpg"/>
+</h1>
 
 ## Pre Requirements
 - Node
@@ -49,3 +52,9 @@ A website that's designed to make the connection of recycling companies and peop
 
 #### The states and cities of Brazil information to register the colecting points where taken using the IBGE API.
 - https://servicodados.ibge.gov.br/api/v1/localidades/distritos
+
+<blockquote alt="[ignore]">
+  <p>
+    This project is only for study purposes. The brand, logo and name are non professional.
+  </p>
+</blockquote>
