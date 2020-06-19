@@ -78,9 +78,7 @@ server.post("/save-point", (req,res) => {
 
 server.get("/search", (req, res) => {
 
-    const search = rq.query.search
-
-    
+    //const search = rq.query.search
 
     //Pegar os dados do banco de dados
     db.all(`SELECT * FROM places `, function(err,rows) {

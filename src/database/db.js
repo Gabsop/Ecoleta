@@ -58,7 +58,7 @@ module.exports = db
 
     // db.run(query, values, afterInsertData)
 
-    // 3. Consultar os dados da tabela
+    //3. Consultar os dados da tabela
     // db.all(`SELECT * FROM places`, function(err,rows) {
     //     if(err) {
     //         return console.log(err)
@@ -70,13 +70,12 @@ module.exports = db
 
 
    // 4. Deletar um dado da tabela
+    // db.run(`DELETE FROM places WHERE id = ?`, [4], function(err, rows){
+    //     if(err){
+    //         return console.log(err)
+    //     }
 
-    db.run(`DELETE FROM places WHERE id = ?`, [5], function(err, rows){
-        if(err){
-            return console.log(err)
-        }
-
-        console.log("Registro deletado com sucesso!")
-        console.log(rows)
-    })
+    //     console.log("Registro deletado com sucesso!")
+    //     console.log(rows)
+    // })
   })
