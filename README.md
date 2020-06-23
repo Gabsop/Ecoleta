@@ -4,28 +4,6 @@ A website that's designed to make the connection of recycling companies and peop
 <img alt="Initial page" src="img/index.jpg"/>
 </h1>
 
-## Pre Requirements
-- Node
-```bash
- $ sudo apt install nodejs
- ```
- - Npm
- ```bash
- $ sudo apt install npm
- ```
- - Nodemon
- ```bash
- $ npm install -g nodemon
- ```
- - Express
- ```bash
- $ npm install -g express
- ```
- - SQlite3
- ```bash
- $ npm install sqlite3
- ```
-
 ## How to use
 - Clone this repository and enter it
 ```bash
